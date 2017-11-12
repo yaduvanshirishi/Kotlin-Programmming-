@@ -1,0 +1,15 @@
+Given the string, check if it is a palindrome.
+
+fun checkPalindrome(inputString: String): Boolean {
+    
+    var len = inputString.length-1
+    
+    for (i in len downTo 0){
+        
+        if(inputString[i]!=inputString[len-i]){
+            return false;
+            break;
+        }
+    }
+    return true;
+}
